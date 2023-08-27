@@ -1,0 +1,115 @@
+body, html { margin: 0; min-height: 100vh; }
+
+body { 
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #080404;
+  color: #ffffff;
+}
+
+.conteudo { 
+  padding: 1%;
+  gap: 10px;
+  display: grid;
+  place-items: center;
+}
+
+.grid-termo {
+  display: grid;
+  grid-template-rows: repeat(5, 65px);
+  gap: 7px;
+
+  margin-bottom: 2%;
+}
+
+.grid-termo > .linha {
+  display: grid;
+  grid-template-columns: repeat(5, 65px);
+  gap: 7px;
+}
+
+.grid-termo > .linha > .coluna {
+  display: grid;
+  place-items: center;
+  height: 100%;
+
+  background-color: #bebebe;
+  color: #2e2e2e;
+  border-radius: 3px;
+
+  font-size: 22px;
+  font-weight: 700;
+}
+.coluna-selecionada {
+  border: 1px solid rgb(17, 0, 255);
+}
+
+.linha-selecionada {
+  border: 1px dashed red;
+}
+.grid-teclado {
+  display: grid;
+  grid-template-columns: repeat(10, 35px);
+  gap: 2.2px;
+}
+
+.grid-teclado > button {
+  height: 35px;
+
+  border: none;
+  border-radius: 5px;
+}
+
+.grid-teclado > .btn-enter {
+  grid-column: 2 span;
+}
+
+.grid-teclado > button:hover {
+  background-color: transparent;
+  
+  color: #32fe5e;
+
+  font-weight: 800;
+}
+#divMensagemFinal {
+  gap: 10px;
+  display: grid;
+  place-items: center;
+  padding: 10px 20px;
+  text-align: center;
+	text-transform: uppercase;
+	font-weight: bold;
+}
+.btn-reiniciar{
+  border: none;
+  padding: 10px 10px;
+  text-align: center;
+  display: flex;
+  cursor: pointer;
+}
+.letra-correta{
+  background-color: green !important;
+}
+
+.letra-posicao-incorreta{
+  background-color: yellow !important;
+}
+
+.letra-nao-existente{
+  background-color: rgb(138, 146, 153) !important;
+}
+
+.display-none{
+  display: none !important;
+}
+
+.cor-cinza{
+  background-color: #e3d4d4 !important;
+}
+
+.jogador-perdeu{
+  color: #ee1414 !important;
+}
+
+.jogador-ganhou{
+  color: #085830 !important;
+}
