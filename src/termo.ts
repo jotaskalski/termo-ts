@@ -30,9 +30,9 @@ export enum AvaliacaoLetraEnum {
     }
   
     if (avaliacoes.every( a => a === AvaliacaoLetraEnum.Correta)){
-      this.mensagemFinal = 'Você acertou a palavra' + this.palavraSecreta + 'parabéns!!!';
+      this.mensagemFinal = 'Você acertou a palavra ' + this.palavraSecreta + ', parabéns!';
     } else if (this.jogadorPerdeu()) {
-      this.mensagemFinal = 'Você perdeu! A palavra secreta era: '  + this.palavraSecreta +  ' Não desista e tente novamente...';
+      this.mensagemFinal = 'Você perdeu! A palavra secreta era: '  + this.palavraSecreta +  ' Tente novamente...';
     }
   
     return avaliacoes;
